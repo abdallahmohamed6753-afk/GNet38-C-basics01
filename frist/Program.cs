@@ -10,52 +10,56 @@ class Book
 class Program
 {
     static void Main()
-    {//              Q1
+    {
+        #region Q1
+        Book book = new Book();
+        book.Title = "C# Basics";
+        book.Pages = 300;
+        object obj = book;
+        Console.WriteLine(obj);
+        #endregion
 
-        //Book book = new Book();
-        //book.Title = "C# Basics";
-        //book.Pages = 300;
-        //object obj = book;     
-        //Console.WriteLine(obj);
-        //               Q2
+        #region Q2
+        Book book = new Book();
+        book.Title = "C# Basics";
+        book.Pages = 300;
+        Console.WriteLine(book.ToString());
+        Console.WriteLine(book.Equals(book));
+        Console.WriteLine(book.GetHashCode());
+        Console.WriteLine(book.GetType());
+        #endregion
 
-        //Book book = new Book();
-        //book.Title = "C# Basics";
-        //book.Pages = 300;
-        //Console.WriteLine(book.ToString());
-        //Console.WriteLine(book.Equals(book));
-        //Console.WriteLine(book.GetHashCode());
-        //Console.WriteLine(book.GetType());
-        //              Q3
+        #region Q3
+        int pages = int.Parse("464");
+        #endregion
 
-        //int pages = int.Parse("464");
+        #region Q4
+        int a = 10;
+        int b = 0;
+        int result = a / b;
+        Console.WriteLine(result);
+        ////                مش عارف اكمل السؤال
+        #endregion
 
-        //              Q4
-        //int a = 10;
-        //int b = 0;
-        //int result = a / b;
-        //Console.WriteLine(result);
-        //////                مش عارف اكمل السؤال
 
-        //              Q5
-        #region
+        #region Q5
         int pages = 300;
         double d = pages;
         Console.WriteLine(d);
         #endregion
-        //              Q6
-        #region
+
+        #region Q6
         double price = 49.99;
         int result = (int)price;
         Console.WriteLine(result);
         #endregion
-        //              Q7
+
         #region Q7
         string pagesText = "464";
         int pages = Convert.ToInt32(pagesText);
         Console.WriteLine(pages);
         #endregion
-        //              Q8
+
         #region Q8
         string yearText = "2023";
         int year = int.Parse(yearText);
@@ -70,7 +74,7 @@ class Program
             Console.WriteLine("Invalid number");
         }
         #endregion
-        ////              Q9
+
         #region Q9
 
         int pages = 464;
@@ -79,7 +83,6 @@ class Program
         Console.WriteLine(pagesText.GetType());
         #endregion
 
-        //              Q10
         #region Q10
         int copies = 100;
         object boxed = copies;
